@@ -18,7 +18,7 @@
 						</div></div><!--blog header-->
 
 						<div class="blog-body">
-							<form name="locationForm" method="post" class="bv-form">
+							<form name="locationForm" method="post" class="bv-form" action="/home/result/">
 								<div class="form-group has-feedback">
 									<div class="row">
 										<div class="col-md-8">
@@ -31,28 +31,25 @@
 												<option value="comedy">1명</option>
 												<option value="action">2명</option>
 												<option value="horror">3명</option>
-												<option value="romance">선택x</option>
 											</select><i class="form-control-feedback" data-bv-icon-for="genre" style="display: none;"></i>
 											<small class="help-block" data-bv-validator="notEmpty" data-bv-for="genre" data-bv-result="NOT_VALIDATED" style="display: none;">The genre is required</small>
 										</div>
 									</div>
 								</div>
+
 								<div class="form-group has-feedback">
 									<div class="row">
-										<div class="col-md-4">
-											<label class="control-label">Director</label>
+										<div class="col-md-12">
+											<label class="control-label">Description</label>
 											<input type="text" class="form-control" name="director" data-bv-field="director"><i class="form-control-feedback" data-bv-icon-for="director" style="display: none;"></i>
 										<small class="help-block" data-bv-validator="notEmpty" data-bv-for="director" data-bv-result="NOT_VALIDATED" style="display: none;">The director name is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="director" data-bv-result="NOT_VALIDATED" style="display: none;">The director name must be less than 80 characters long</small></div>
-										<div class="col-md-4">
-											<label class="control-label">Writer</label>
-											<input type="text" class="form-control" name="writer" data-bv-field="writer"><i class="form-control-feedback" data-bv-icon-for="writer" style="display: none;"></i>
-										<small class="help-block" data-bv-validator="notEmpty" data-bv-for="writer" data-bv-result="NOT_VALIDATED" style="display: none;">The writer name is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="writer" data-bv-result="NOT_VALIDATED" style="display: none;">The writer name must be less than 80 characters long</small></div>
-										<div class="col-md-4">
-											<label class="control-label">Producer</label>
-											<input type="text" class="form-control" name="producer" data-bv-field="producer"><i class="form-control-feedback" data-bv-icon-for="producer" style="display: none;"></i>
-										<small class="help-block" data-bv-validator="notEmpty" data-bv-for="producer" data-bv-result="NOT_VALIDATED" style="display: none;">The producer name is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="producer" data-bv-result="NOT_VALIDATED" style="display: none;">The producer name must be less than 80 characters long</small></div>
 									</div>
 								</div>
+								<!--
+
+
+
+
 								<div class="form-group has-feedback">
 									<div class="row">
 										<div class="col-md-6">
@@ -65,10 +62,13 @@
 										<small class="help-block" data-bv-validator="notEmpty" data-bv-for="trailer" data-bv-result="NOT_VALIDATED" style="display: none;">The trailer link is required</small><small class="help-block" data-bv-validator="uri" data-bv-for="trailer" data-bv-result="NOT_VALIDATED" style="display: none;">The trailer link is not valid</small></div>
 									</div>
 								</div>
+
 								<div class="form-group has-feedback">
-									<label class="control-label">Review</label>
+									<label class="control-label">Description</label>
 									<textarea class="form-control" name="review" rows="5" data-bv-field="review"></textarea><i class="form-control-feedback" data-bv-icon-for="review" style="display: none;"></i>
 								<small class="help-block" data-bv-validator="stringLength" data-bv-for="review" data-bv-result="NOT_VALIDATED" style="display: none;">The review must be less than 500 characters long</small></div>
+								-->
+
 
 
 								<div class="form-group has-feedback">
@@ -88,16 +88,16 @@
 								</div>
 
 								<div class="form-group has-feedback">
-									<label class="control-label">도착지</label>
+									<label class="control-label">도착지</label><!--출발지와 네임이 같으면 출발지와 한묶음 라디오버튼 되버림-->
 									<div>
 										<label class="radio-inline">
-											<input type="radio" name="rating" value="terrible" data-bv-field="rating">익산터미널
+											<input type="radio" name="rating2" value="terrible" data-bv-field="rating">익산터미널
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="rating" value="watchable" data-bv-field="rating">익산역
+											<input type="radio" name="rating2" value="watchable" data-bv-field="rating">익산역
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="rating" value="best" data-bv-field="rating"><i class="form-control-feedback" data-bv-icon-for="rating" style="display: none;"></i>익산터미널
+											<input type="radio" name="rating2" value="best" data-bv-field="rating"><i class="form-control-feedback" data-bv-icon-for="rating" style="display: none;"></i>익산터미널
 										</label>
 									</div>
 								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="rating" data-bv-result="NOT_VALIDATED" style="display: none;">The arriving point is required</small>
